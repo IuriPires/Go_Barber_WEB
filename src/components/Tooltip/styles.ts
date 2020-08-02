@@ -9,8 +9,9 @@ export const Container = styled.div`
     padding: 8px;
     border-radius: 4px;
     font-size: 14px;
-    /* opacity: 0; */
-    /* transition: opacity 0.4s; */
+    opacity: 0;
+    transition: opacity 0.4s;
+    visibility: hidden;
 
     position: absolute;
     bottom: calc(100% + 12px);
@@ -28,5 +29,10 @@ export const Container = styled.div`
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+
+  &:hover span {
+    opacity: 1;
+    visibility: visible;
   }
 `;
